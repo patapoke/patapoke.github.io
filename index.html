@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LES ENTREPRISES PAT ET ICK Inc. | Rénovation résidentielle et agricole</title>
+<meta name="description" content="Rénovation, réparation et agrandissement — résidentiel et agricole. Du sous-sol au grenier, on s'occupe de tout.">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <div class="nav-inner">
+        <div class="nav-left">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Logo Les Entreprises Pat et Ick Inc." />
+            </div>
+            <div>
+                <div class="nav-title-main">LES ENTREPRISES PAT ET ICK Inc.</div>
+                <div class="nav-sub">Du sous-sol au grenier, on s'occupe de tout.</div>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#photos">Photos</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="hero-card">
+        <div class="hero-pill">
+            <span class="hero-pill-dot"></span>
+            <span>Rénovation résidentielle et agricole</span>
+        </div>
+
+        <h1>Des rénovations solides,<br /><span>du sous-sol au grenier.</span></h1>
+
+        <p class="hero-slogan">LES ENTREPRISES PAT ET ICK Inc.</p>
+
+        <p class="hero-text">
+            Spécialisés en rénovation, réparation et agrandissement pour les secteurs résidentiels et agricoles.
+            Des travaux durables, sécuritaires et réalisés avec professionnalisme.
+        </p>
+
+        <div class="hero-badges">
+            <span class="hero-badge">Résidentiel</span>
+            <span class="hero-badge">Agricole</span>
+            <span class="hero-badge">Agrandissements</span>
+            <span class="hero-badge">Réparations</span>
+        </div>
+
+        <div class="hero-cta">
+            <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
+                Demander une soumission <span>➜</span>
+            </button>
+            <button class="btn-outline" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' });">
+                Voir nos services
+            </button>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="section-header">
+        <h2 class="section-title">Nos services</h2>
+        <p class="section-subtitle">Rénovation – Réparation – Agrandissement</p>
+    </div>
+
+    <div class="services-grid">
+        <article class="service-card">
+            <div class="service-tag">Résidentiel</div>
+            <h3 class="service-title">Rénovation intérieure</h3>
+            <p class="service-desc">Cuisine, salle de bain, sous-sol, planchers, murs, finitions.</p>
+            <div class="service-meta">Travail propre, professionnel et durable.</div>
+        </article>
+
+        <article class="service-card">
+            <div class="service-tag">Agricole</div>
+            <h3 class="service-title">Bâtiments agricoles</h3>
+            <p class="service-desc">Réparation, transformation et agrandissement.</p>
+            <div class="service-meta">Granges, entrepôts, structures diverses.</div>
+        </article>
+
+        <article class="service-card">
+            <div class="service-tag">Structure</div>
+            <h3 class="service-title">Réparation & agrandissement</h3>
+            <p class="service-desc">Travaux structuraux majeurs et sécuritaires.</p>
+            <div class="service-meta">Conformité et solidité garanties.</div>
+        </article>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="section-header">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Pour une information ou une soumission</p>
+    </div>
+
+    <div class="contact-strip">
+        <div class="contact-item">
+            <span>Téléphone : <strong>450-275-2962</strong></span>
+        </div>
+
+        <div class="contact-item">
+            <span>Courriel : <strong>lesentreprisepatetick@yahoo.ca</strong></span>
+        </div>
+
+        <div class="contact-item">
+            <span>Régions desservies : <strong>Laurentides, Lanaudière, Outaouais et environs</strong></span>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div>
+            <div class="footer-brand">LES ENTREPRISES PAT ET ICK Inc.</div>
+            <div class="footer-slogan">Du sous-sol au grenier, on s'occupe de tout.</div>
+        </div>
+        <div class="footer-links">
+            <span>© <span id="year"></span> Tous droits réservés.</span><br>
+            <span>Entreprise enregistrée au Québec — RBQ : <strong>5853-8703-01</strong></span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const yearSpan = document.getElementById('year');
+if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
